@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header .navbar {
+  width: 100%;
+  background: #27374D;
+  border-bottom: 1px solid rgb(23,35,64);
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+header .navbar .container a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #27374D;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: white; */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: auto;
+}
+
+main #section-1 {
+    margin-top: 2%;
+}
+
+main .toolbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 1.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .toolbar input {
+    width: 60%;
+    min-width: 50px;
+}
+
+main .toolbar button {
+    padding: 7.5px;
+    height: 40%;
+    width: max-content;
+    border-radius: 7.5px;
+    background-color: #9DB2BF;
+    border-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+main .toolbar button:active, 
+main .input-data button.primary-button:active {
+    background-color: hsl(215, 33%, 23%);
+    color: #DDE6ED;
+}
+
+main .toolbar input {
+    width: 40%;
+    min-width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main #section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #DDE6ED;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main .input-data {
+    width: 60%;
+}
+
+main .input-data h2 {
+    padding-bottom: 20px;
+}
+
+main .input-data .form-input {
+    padding: 7.5px;
+    border-radius: 5px;
+    width: 90%;
+    border: 1px solid #27374D;
+}
+
+main .input-data .checkbox {
+    margin-top: 10px;
+}
+
+main .input-data form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+main .input-data button.primary-button {
+    padding: 7.5px;
+    width: 35%;
+    min-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7.5px;
+    border: 1px solid #9DB2BF;
+    background-color: #9DB2BF;
+    font-weight: bold;
+}
+
+main #section-2 .photo {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+main #section-2 .photo img {
+    width: 75%;
+    min-width: 100px;
+}
+
+section:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #DDE6ED;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+section:nth-child(3) h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    padding: 20px;
+    width: 100%;
+    height: max-content;
+    margin-top: 20px;
+}
+
+footer h2 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h2 a:hover {
+    color: red;
+}
+
+.action button {
+    padding: 5px;
+    border: none;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.action .edit {
+    background-color: yellow;
+}
+
+.action .delete {
+    background-color: red;
+}
+
+.action .toggle-read {
+    background-color: gray;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table .year-column {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+
+td.action {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+    width: 300px;
+}
+
+button.edit {
+    background-color: yellow;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button.toggle-read {
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.notification {
+    margin-left: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    background-color: #27374D;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    main #section-1 .toolbar {
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    main #section-1 .toolbar input {
+        margin-top: 20px;
+        width: 325px;
+        min-width: 100px;
+    }
+
+    main #section-2 .input-data {
+        width: 100%;
+    }
+
+    main #section-2 .photo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    main {
+        width: 90%;
+    }
+}

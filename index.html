@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps | Ivan Wahyu Nugroho</title>
+
+    <!-- Web Icon -->
+    <link rel="icon" href="assets/logo-ivan.jpg">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    
+    <!-- Header (MULAI) -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="title">Bookshelf Apps - Dicoding</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header (SELESAI) -->
+
+    <!-- Main (MULAI) -->
+    <main>
+        <section id="section-1">
+            <div class="toolbar">
+                <h2>Welcome to Bookshelf Apps</h2>
+            </div>
+        </section>
+
+        <section id="section-2" class="hide-container">
+            <div class="input-data">
+                <h2>Menambahkan Buku</h2>
+    
+                <form>
+                    <label for="title">Judul Buku</label> <br>
+                    <input type="text" class="form-input" id="title" placeholder="Judul Buku" required> <br>
+                    
+                    <label for="author">Penulis Buku</label> <br>
+                    <input type="text" class="form-input" id="author" placeholder="Penulis Buku" required> <br>
+                    
+                    <label for="year">Tahun Terbit</label> <br>
+                    <input type="number" class="form-input" id="year" placeholder="Tahun Terbit" required> <br>
+    
+                    <div class="checkbox">
+                        <input type="checkbox" id="isComplete" />
+                        <label for="isCompleted">&nbsp;&nbsp;Selesai dibaca</label>
+                    </div> <br>
+    
+                    <button class="primary-button"          type="submit" id="save-book">
+                        Simpan Buku
+                    </button>
+                </form>
+            </div>
+
+            <div class="photo">
+                <img src="https://th.bing.com/th/id/R.b8783db0221409a24462a2dd20906611?rik=%2f8p%2fidKFsmr%2fLA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fbook-png-book-stack-png-image-25686-1024.png&ehk=CEU5XLKGAI1EGRgmH8PkKmkXygAxsMcBZzs%2frY4y%2fMc%3d&risl=&pid=ImgRaw&r=0" alt="Gambar Buku">
+            </div>
+        </section>
+
+        <section id="section-3">
+            <h2>Menampilkan Buku</h2>
+            <h3>Belum Selesai Dibaca</h3>
+            <div class="list-buku belum-dibaca"></div>
+
+            <h3>Sudah Selesai Dibaca</h3>
+            <div class="list-buku sudah-dibaca"></div>
+        </section>
+    </main>
+    <!-- Main (SELESAI) -->
+
+    <!-- Footer (MULAI) -->
+    <footer>
+        <h2>Created By <a href="https://github.com/ifwhy" target="_blank">Ivan Wahyu Nugroho</a> with ❤️</h2>
+
+        <h2>Thank You Dicoding ❤️</h2>
+    </footer>
+    <!-- Footer (SElESAI) -->
+
+    <!-- MyScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
